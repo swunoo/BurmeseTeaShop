@@ -1,0 +1,169 @@
+:root{
+    --color1:#F0AF44;
+    --color2:#5BF093;
+    --color3:#29A348;
+
+
+}
+
+body{
+    padding:0; margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #333;
+    color: #eee;
+}
+.bgWrapper{
+    position: absolute;
+    top:12vh;
+    width:100vw;
+    height:86vh;
+    overflow: hidden;
+    background-image: url('teaShop0.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+.bgWrapperBlur{
+    position: absolute;
+    top:12vh;
+    width:100vw;
+    height:86vh;
+    background-color: #333;
+    opacity: 0.5;
+    z-index: -1;
+}
+/* .bgWrapper>img{
+    position: absolute;
+    width:100vw;
+    
+    transform: rotateY(180deg);
+    opacity: 0.2;
+} */
+
+.flex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/*--------------------------------------------*/
+
+/*Nav*/
+
+.nav{
+    gap:2vw;
+    padding:0vw 5vw;
+    color:var(--color1);
+    height: 10vh;
+    align-items: baseline;
+}
+
+.searchBar>input{
+    border:none;
+    background-color: var(--color1);
+    border-radius: 20vw;
+}
+
+.logo{
+    color:orange;
+}
+
+.searchBar{
+    margin-left:auto;
+}
+
+/*--------------------------------------------*/
+
+/*Content*/
+.content{
+    margin-top: 2vh;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    height:85vh;
+}
+.foodPanel{
+    padding: 0 2vmax;
+    text-align: center;
+    text-shadow: 2px 3px 3px black;
+}
+.dishes{
+    gap:3vw;
+    padding:3vw;
+}
+.dish{
+    flex-direction: column;
+}
+.dish>img{
+    width:50%;
+    cursor: pointer;
+}
+.dish>img:hover{
+    padding:2vmax;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.drinkPanel{
+    flex-direction: column;
+    justify-content: flex-start;
+    border-left: 3px double var(--color1);
+    height:100%;
+    padding: 0 2vmax;
+}
+.drinkGpName{
+    color:var(--color1);
+    text-shadow: 1px 1px 5px #333;
+}
+.drinkGp{
+    font-size: 1.2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top: 1px solid var(--color1);
+    border-bottom: 1px solid var(--color1);
+}
+.drinkGpItems{
+    justify-content: space-around;
+    gap:3vw;
+}
+.drinkGpItem{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.drinkGpItem>img{
+    width:7vw;
+    z-index: 3;
+}
+.drinkGpItem>img:hover{
+    border-radius: 50%;
+    background-color: var(--color1);
+    cursor:pointer;
+}
+
+.selected{
+    top:20vh;left:5vw;
+    position: absolute;
+}
+.selectedDish{
+    flex-direction: row;
+    width:10vw;
+    padding:1vw;
+    margin-bottom: 5vw;
+    border-radius: 50%;
+    border:3px solid var(--color1);
+}
+.dishGpItem{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2vw;
+    flex-direction: column;
+    gap:0;
+}
+.dishGpItem>img{
+    width:20vw;
+    z-index:3;
+    border-radius: 15px;
+}
+.subDishes{
+    gap:3vw;
+}
